@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>QR-CODE Generator</h1>
+        <div class="box">
+            <div class="box1">
+                <form action="/submit" method="post">
+                    <label for="link">ENTER YOUR URL :</label>
+                    <input id="input-box" type="text" name="link" autofocus autocomplete="off">
+                    <input id="btn" type="submit" value="submit">
+                </form>
+            </div>
+            <div class="box2">
+                <img src="<%=src  %>" alt="qr-image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
